@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="icon" href="./icons/twitter-custom-blue.svg" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        .btn-next-onmouse:hover {
+            opacity: 0.8;
+        }
+
+        #wrapper {
+            align-items: center;
+            margin-left:auto;
+            margin-right:auto;
+            min-width: 640px;
+
+        }
+
+        .google-icon {
+                        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        -webkit-text-fill-color: transparent;
+                    }
+        @font-face {
+            font-family: "Product-Sans-Bold";
+            src: url("./Fonts/Product-Sans-Bold.ttf") format("TrueType");
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "Product-Sans-Regular";
+            src: url("./Fonts/Product-Sans-Regular.ttf") format("TrueType");
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .btn-close {
+            border-radius: 100%;
+            padding-top: 0px;
+        }
+
+
+        /*SECOND METHOD START*/
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .separator::before,
+        .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid gray;
+        width: 1/6;
+        opacity: 0.3;
+        }
+
+        .separator:not(:empty)::before {
+        margin-right: .25em;
+        }
+
+        .separator:not(:empty)::after {
+        margin-left: .25em;
+        }
+        /*SECOND METHOD END*/
+
+        /* Placeholder Start */
+        /* .input-holder input:focus ~ .label
+        .input-holder input:not(:focus):valid ~ .label {
+            top: -10px;
+            left: 0;
+            font-size: 11px;
+            pointer-events: none;
+
+        } */
+
+        /* Placeholder End */
+
+
+    </style>
+</head>
+<body class="bg-zinc-400">
+    <div class="container flex justify-center">
+        <div class=" shadow-zinc-500">
+            <div class="flex min-h-screen justify-center items-center">
+                <div class=" bg-white p-3 m-10 rounded-2xl w-2/5 h-2/3" id="wrapper">
+    
+                    <div float-root>
+                        <button class="float-left content-start text-3xl border-black btn-close" onmouseover="closeOn()" id="close" onmouseout="closeOff()">&times</button>
+        
+                        <div class="">
+                            <i class="fab fa-twitter  flex  justify-center pr-5 mb-6" style="font-size:30px;color: #1597E5;"></i>
+                        </div>
+                    </div>
+                
+                    
+        
+                    <h2 class="flex pr-24 text-left place-content-center text-2xl font-bold mb-12" style="font-family: 'IBM Plex Sans', sans-serif;">Sign in to Twitter</h2>
+                    
+                    <form>
+                        <div class="float-root space-x-3">
+                            <div class="flex justify-center items-center row ">
+                                <button class="text-center border-gray-200 border-solid border-2 mb-4 h-10 w-1/2 rounded-3xl " onmouseover="googleOn()" onmouseout="googleOut()" id="google">
+                                    <span>
+                                        <i class="fab fa-google google-icon fa-x mr-2"></i>
+                                    </span>
+                                    <span class="text-base text-bold text-black" style="font-family: Product-Sans-Regular; ">Sign in with Google</span>
+                                </button>
+                            </div>
+                
+                            <div class="flex justify-center items-center ">
+                                <button class="mb-3 border-2 h-10 w-1/2 rounded-3xl ">
+                                    <span>
+                                        <i class="fab fa-apple fa-1x mr-1"></i>
+                                    </span>
+                                    <span class="text-center justify-center items-center font-solid font-bold text-sm" style="font-family: 'IBM Plex Sans', sans-serif;">Sign in with Apple</span>
+                                </button>
+                            </div>
+                
+                            <div class="flex items-center justify-center mb-3">
+                                <div class="separator w-1/2">or</div>
+                            </div>
+                
+                            <div class="flex  items-center justify-center">
+                                <input type="text" class="text-left outline-blue-700 border-2 rounded-md h-14 w-1/2 mb-4 px-3 focus:placeholder-blue-700 placeholder-stone-600 text-base" placeholder="Phone, email or username">
+                                <!-- <div class="input-holder">
+                                    <input type="text" class="mr-14 absolute border-black border-2 w-1/5 h-12" name="username" required>
+                                    <label class="relative">Phone, email or username</label>
+                                </div> -->
+                            </div>
+                
+                            <div class="flex text-center justify-center items-center">
+                                <button class="border-2 mb-4 h-10 w-1/2 rounded-3xl bg-black outline-gray-500 outline-4 btn-next-onmouse">
+                                    <span class="font-solid font-bold" style="color: white;">Next</span>
+                                </button>
+                            </div>
+                
+                            <div class="flex text-center justify-center ">
+                                <button class="border-2 mb-12 h-10 w-1/2 rounded-3xl outline-gray-500" id="forgot"  onmouseover="forgotHover()" onmouseout="forgotOut()">
+                                    <span class="font-bold ">Forgot password?</span>
+                                </button>
+                            </div>
+                
+                            <div class="flex text-center items-center justify-center mb-20">
+                                <p class="pr-16 text-stone-500 text-" >Don't have an account? <span class="text-cyan-500" id="signup" onmouseover="signUpOn()" onmouseout="signUpOff()"><a href="">Sign up</a></span></p>
+                            </div>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="./index.js"></script>
+    <!--  -->
+    
+</body>
+</html>
