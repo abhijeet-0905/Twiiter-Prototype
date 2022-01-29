@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    position: relative;
+}
+
+.btn-close {
+    padding: 8px;
+    font-size: xx-large;
+    border-radius: 50%;
+    margin-top: 3px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}  
+
+.btn-close:hover {
+    background-color: #e7e7e7;
+}
+
+.head-twtr-icon i {
+    font-size: 30px;
+    color: #1597E5;
+}
+
+.btn-google {
+    order: 1;
+}
+
+.btn-apple {
+    order: 2;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.google-icon {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-div {
+    position: relative;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* max-width: 600px */
+
+.main {
+    background-color: white;
+    border-radius: 20px;
+    width: 100vw;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.head-twtr-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    margin: 10px auto auto auto;
+}
+
+.btn-close {
+    visibility: hidden;
+}
+
+.sign-in {
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.form-div {
+    margin-top: 8%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    width: 300px;
+    height: 35px;
+    border-radius: 40px;
+    border-color: rgb(209, 203, 203);
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+/* or starts */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+content: '';
+flex: 1;
+border-bottom: 1px solid gray;
+width: 125px;
+opacity: 0.3;
+}
+
+.separator:not(:empty)::before {
+margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+margin-left: .25em;
+}
+/* or ends */
+
+/* input starts */
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    color: blue;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.inputText {
+    outline: none;
+    font-size: 14px;
+    margin: 20px 0;
+    width: 300px;
+    height: 45px;
+    border-color: rgb(209, 203, 203);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.floating-label {
+    margin-top: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 18px;
+    transition: 0.2s ease all;
+}
+/* input ends */
+
+.btn-next {
+    background-color: black;
+    text-decoration: solid;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-forgot {
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+.link-signup {
+    color: rgb(49, 136, 235);
+    margin: 0 4px;
+}
+
+.signup {
+    margin: 20px 96px 20px 0; /* this can cause issues */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) {
+    .main {
+    background-color: white;
+    border-radius: 20px;
+    width: 100vw;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .head-twtr-icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 45%;
+        top: 0;
+        margin: 10px auto auto auto;
+    }
+
+    .btn-close {
+        visibility: hidden;
+    }
+
+    .sign-in {
+        margin-left: 12%;
+        margin-top: 5%;
+    }
+
+    .form-div {
+        margin-top: 8%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 300px;
+        height: 35px;
+        border-radius: 40px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    /* or starts */
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid gray;
+        width: 125px;
+        opacity: 0.3;
+    }
+
+    .separator:not(:empty)::before {
+        margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+        margin-left: .25em;
+    }
+    /* or ends */
+
+    /* input starts */
+
+    input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+        top: 8px;
+        bottom: 10px;
+        left: 20px;
+        color: blue;
+        font-size: 11px;
+        opacity: 1;
+    }
+
+    .inputText {
+        outline: none;
+        font-size: 14px;
+        margin: 20px 0;
+        width: 300px;
+        height: 45px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+    }
+
+    .floating-label {
+        margin-top: 18px;
+        position: absolute;
+        pointer-events: none;
+        left: 20px;
+        top: 18px;
+        transition: 0.2s ease all;
+    }
+    /* input ends */
+
+    .btn-next {
+        background-color: black;
+        text-decoration: solid;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn-forgot {
+        text-decoration: solid;
+        font-weight: bold;
+    }
+
+    .link-signup {
+        color: rgb(49, 136, 235);
+        margin: 0 4px;
+    }
+
+    .signup {
+        margin: 20px 96px 20px 0; /* this can cause issues */
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        height: 100vh;
+        background-color: rgb(188, 182, 190);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main {
+        background-color: white;
+        border-radius: 20px;
+        width: 70vw;
+        height: 60vh;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+
+    .head-twtr-icon {
+        width: 30px;
+        height: 30px;
+        /* position: absolute; */
+        /* margin: 10px auto auto auto; */
+        /* left: 45%; */
+        /* top: 0; */
+    }
+
+    .btn-close {
+        visibility: visible;
+    }
+
+    .sign-in {
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .form-div {
+        margin-top: 8%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 300px;
+        height: 35px;
+        border-radius: 40px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    /* or starts */
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid gray;
+        width: 125px;
+        opacity: 0.3;
+    }
+
+    .separator:not(:empty)::before {
+        margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+        margin-left: .25em;
+    }
+    /* or ends */
+
+    /* input starts */
+
+    input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+        top: 8px;
+        bottom: 10px;
+        left: 20px;
+        color: blue;
+        font-size: 11px;
+        opacity: 1;
+    }
+
+    .inputText {
+        outline: none;
+        font-size: 14px;
+        margin: 20px 0;
+        width: 300px;
+        height: 65px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+    }
+
+    .floating-label {
+        margin-top: 28px;
+        position: absolute;
+        pointer-events: none;
+        left: 20px;
+        top: 24px;
+        transition: 0.2s ease all;
+    }
+    /* input ends */
+
+    .btn-next {
+        background-color: black;
+        text-decoration: solid;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn-forgot {
+        text-decoration: solid;
+        font-weight: bold;
+    }
+
+    .link-signup {
+        color: rgb(49, 136, 235);
+        margin: 0 4px;
+    }
+
+    .signup {
+        margin: 20px 96px 60px 0; /* this can cause issues */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        height: 100vh;
+        background-color: rgb(188, 182, 190);
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        background-color: white;
+        border-radius: 20px;
+        width: 40vw;
+        height: 90vh;
+        margin: 25px 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .head-twtr-icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        margin: 10px auto auto auto;
+        left: 45%;
+        top: 0;
+    }
+
+    .btn-close {
+        visibility: visible;
+    }
+
+    .sign-in {
+        margin-left: 26%;
+        margin-top: 5%;
+    }
+
+    .form-div {
+        margin-top: 8%;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 300px;
+        height: 35px;
+        border-radius: 40px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+
+    /* or starts */
+    .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .separator::before,
+    .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid gray;
+        width: 125px;
+        opacity: 0.3;
+    }
+
+    .separator:not(:empty)::before {
+        margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after {
+        margin-left: .25em;
+    }
+    /* or ends */
+
+    /* input starts */
+
+    input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+        top: 8px;
+        bottom: 10px;
+        left: 20px;
+        color: blue;
+        font-size: 11px;
+        opacity: 1;
+    }
+
+    .inputText {
+        outline: none;
+        font-size: 14px;
+        margin: 20px 0;
+        width: 300px;
+        height: 65px;
+        border-color: rgb(209, 203, 203);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 4px;
+    }
+
+    .floating-label {
+        margin-top: 28px;
+        position: absolute;
+        pointer-events: none;
+        left: 20px;
+        top: 24px;
+        transition: 0.2s ease all;
+    }
+    /* input ends */
+
+    .btn-next {
+        background-color: black;
+        text-decoration: solid;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .btn-forgot {
+        text-decoration: solid;
+        font-weight: bold;
+    }
+
+    .link-signup {
+        color: rgb(49, 136, 235);
+        margin: 0 4px;
+    }
+
+    .signup {
+        margin: 20px 96px 60px 0; /* this can cause issues */
+    }
+}
+
